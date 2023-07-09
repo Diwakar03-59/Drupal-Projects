@@ -1,0 +1,29 @@
+uuid: f5fb396d-48b3-495f-a584-898a0e88854e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.reviews
+    - field.field.comment.reviews.comment_body
+  module:
+    - text
+id: comment.reviews.default
+targetEntityType: comment
+bundle: reviews
+mode: default
+content:
+  author:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  subject: true

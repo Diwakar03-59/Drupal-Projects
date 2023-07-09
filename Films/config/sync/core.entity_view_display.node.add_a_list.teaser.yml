@@ -1,0 +1,137 @@
+uuid: 0024c661-8b3f-4139-be10-45fdb0c244f4
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.add_a_list.body
+    - field.field.node.add_a_list.field_movies
+    - node.type.add_a_list
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          e70e67f2-463a-4cd7-b868-fb51504747a8:
+            uuid: e70e67f2-463a-4cd7-b868-fb51504747a8
+            region: first
+            configuration:
+              id: 'field_block:node:add_a_list:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0277aeaf-ddae-4fc6-a2f9-690f586c11b5:
+            uuid: 0277aeaf-ddae-4fc6-a2f9-690f586c11b5
+            region: first
+            configuration:
+              id: 'field_block:node:add_a_list:uid'
+              label: by
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: author
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          7b263d4e-23a7-4c67-9b77-ccfc79274dac:
+            uuid: 7b263d4e-23a7-4c67-9b77-ccfc79274dac
+            region: content
+            configuration:
+              id: 'field_block:node:add_a_list:body'
+              label: 'Why these are in the list ?'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 500
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          c0c87a82-9394-4310-a033-4cffe2d3c98d:
+            uuid: c0c87a82-9394-4310-a033-4cffe2d3c98d
+            region: first
+            configuration:
+              id: 'field_block:node:add_a_list:field_movies'
+              label: Movies
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.add_a_list.teaser
+targetEntityType: node
+bundle: add_a_list
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_movies: true

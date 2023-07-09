@@ -1,0 +1,22 @@
+uuid: 6022b2c5-9d9c-46d0-85e5-d63342ef35a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.search
+    - field.field.block_content.search.body
+  module:
+    - text
+id: block_content.search.default
+targetEntityType: block_content
+bundle: search
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

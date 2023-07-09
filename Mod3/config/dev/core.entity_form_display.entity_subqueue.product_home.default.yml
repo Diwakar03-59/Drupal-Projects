@@ -1,0 +1,26 @@
+uuid: 909d3f79-3495-4373-9fc4-592295517214
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.product_home
+id: entity_subqueue.product_home.default
+targetEntityType: entity_subqueue
+bundle: product_home
+mode: default
+content:
+  items:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

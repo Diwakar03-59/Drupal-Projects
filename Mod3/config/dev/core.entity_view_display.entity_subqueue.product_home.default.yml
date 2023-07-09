@@ -1,0 +1,28 @@
+uuid: 0fb712b8-c12b-4298-874c-e0a5bea2e570
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.product_home
+id: entity_subqueue.product_home.default
+targetEntityType: entity_subqueue
+bundle: product_home
+mode: default
+content:
+  items:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -10
+    region: content
+hidden: {  }

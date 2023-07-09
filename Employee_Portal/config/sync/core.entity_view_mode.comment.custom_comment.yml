@@ -1,0 +1,10 @@
+uuid: cfaa9a88-eeab-43b2-8264-2b035caa6f41
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.custom_comment
+label: 'Custom Comment'
+targetEntityType: comment
+cache: true

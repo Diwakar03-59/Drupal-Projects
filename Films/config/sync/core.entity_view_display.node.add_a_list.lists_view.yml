@@ -1,0 +1,95 @@
+uuid: 5a97f64a-8f43-4bc4-93b5-7545ea13af7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.lists_view
+    - field.field.node.add_a_list.body
+    - field.field.node.add_a_list.field_movies
+    - node.type.add_a_list
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e9c5ce78-e74b-4fe4-813e-476ca10f1c4a:
+            uuid: e9c5ce78-e74b-4fe4-813e-476ca10f1c4a
+            region: content
+            configuration:
+              id: 'extra_field_block:node:add_a_list:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          8ef8c853-2f0f-447e-a383-c098ef89eaf4:
+            uuid: 8ef8c853-2f0f-447e-a383-c098ef89eaf4
+            region: content
+            configuration:
+              id: 'field_block:node:add_a_list:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: above
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          79ec9482-5b5d-4fce-a814-b64b3a4ad0c7:
+            uuid: 79ec9482-5b5d-4fce-a814-b64b3a4ad0c7
+            region: content
+            configuration:
+              id: 'field_block:node:add_a_list:field_movies'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: teaser
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.add_a_list.lists_view
+targetEntityType: node
+bundle: add_a_list
+mode: lists_view
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: above
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_movies:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

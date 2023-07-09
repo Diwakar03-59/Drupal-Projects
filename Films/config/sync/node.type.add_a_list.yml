@@ -1,0 +1,17 @@
+uuid: f9a990af-45f3-4ad7-bdf5-64f9af0634fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Add a List'
+type: add_a_list
+description: 'To add a list of movies.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,25 @@
+uuid: 6620faef-29f8-4034-a575-d2fec03ca63e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d0d758f8-2b55-4991-801e-eb5194a7088d'
+  module:
+    - block_content
+  theme:
+    - bootstrap5
+id: copyrights
+theme: bootstrap5
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d0d758f8-2b55-4991-801e-eb5194a7088d'
+settings:
+  id: 'block_content:d0d758f8-2b55-4991-801e-eb5194a7088d'
+  label: Copyrights
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

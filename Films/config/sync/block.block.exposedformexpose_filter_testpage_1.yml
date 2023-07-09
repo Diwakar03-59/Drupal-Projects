@@ -1,0 +1,23 @@
+uuid: c711c65b-d161-4780-96d9-0140fd8ea134
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.expose_filter_test
+  module:
+    - views
+  theme:
+    - bootstrap5
+id: exposedformexpose_filter_testpage_1
+theme: bootstrap5
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:expose_filter_test-page_1'
+settings:
+  id: 'views_exposed_filter_block:expose_filter_test-page_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+visibility: {  }

@@ -1,0 +1,70 @@
+uuid: 01f36694-64f2-45c8-bc84-75eb8588ebcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.project
+    - taxonomy.vocabulary.skills
+    - taxonomy.vocabulary.tags
+  module:
+    - block_content
+    - comment
+    - contact
+    - contextual
+    - devel_generate
+    - field_ui
+    - node
+    - search
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+id: hr
+label: HR
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer block_content display'
+  - 'administer block_content form display'
+  - 'administer comment display'
+  - 'administer comment fields'
+  - 'administer comment form display'
+  - 'administer comment types'
+  - 'administer comments'
+  - 'administer contact forms'
+  - 'administer contact_message display'
+  - 'administer devel_generate'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer permissions'
+  - 'administer search'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer users'
+  - 'cancel account'
+  - 'create terms in project'
+  - 'create terms in skills'
+  - 'create terms in tags'
+  - 'delete terms in project'
+  - 'delete terms in skills'
+  - 'delete terms in tags'
+  - 'edit own comments'
+  - 'edit terms in project'
+  - 'edit terms in skills'
+  - 'edit terms in tags'
+  - 'use advanced search'
+  - 'view user email addresses'

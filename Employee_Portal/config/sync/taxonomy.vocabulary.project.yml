@@ -1,0 +1,8 @@
+uuid: b482f3b5-5709-4bb4-8682-60a95d2fe402
+langcode: en
+status: true
+dependencies: {  }
+name: Project
+vid: project
+description: "Describes the company's currently ongoing projects"
+weight: 0

@@ -1,0 +1,35 @@
+uuid: e345002e-c51a-4d8a-8f3b-cfc8966c2fbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feed
+    - field.field.block_content.feed.field_img
+    - field.field.block_content.feed.field_name
+  module:
+    - image
+id: block_content.feed.default
+targetEntityType: block_content
+bundle: feed
+mode: default
+content:
+  field_img:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,26 @@
+uuid: b7cee96e-d2f7-48c5-9610-8b97c813f0af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: top_product
+label: 'top product'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      products: products
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 3
+  max_size: 3
+  act_as_queue: true
+  reverse: false

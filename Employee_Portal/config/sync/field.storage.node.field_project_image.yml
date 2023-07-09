@@ -1,0 +1,30 @@
+uuid: 982f14be-bae0-4f39-a7ec-735f020c0ac0
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_project_image
+field_name: field_project_image
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: b299b693-4006-42f6-9331-1dd8636798cc
+    alt: ''
+    title: ''
+    width: 231
+    height: 130
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,247 @@
+uuid: 098debfe-47bf-456f-b803-8e20c2e5b54a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.field_buy_on_dvd
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_in_cinemas
+    - field.field.node.movie.field_movie_banner
+    - field.field.node.movie.field_netflix
+    - field.field.node.movie.field_plot
+    - field.field.node.movie.field_release_date
+    - field.field.node.movie.field_reviews
+    - field.field.node.movie.field_trailer
+    - node.type.movie
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: title
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          82c41b26-648c-4e4d-8380-2c9d69e45b35:
+            uuid: 82c41b26-648c-4e4d-8380-2c9d69e45b35
+            region: first
+            configuration:
+              id: 'field_block:node:movie:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a49e72c3-e905-4146-8702-d77a4ba5c589:
+            uuid: a49e72c3-e905-4146-8702-d77a4ba5c589
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_release_date'
+              label: 'Release Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: hidden
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: movie
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          098e8355-6c57-4ad7-8275-87e50f4fc261:
+            uuid: 098e8355-6c57-4ad7-8275-87e50f4fc261
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_movie_banner'
+              label: 'Movie Banner'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9cc4098e-d0b6-48ad-ab69-7e3a39bc72a3:
+            uuid: 9cc4098e-d0b6-48ad-ab69-7e3a39bc72a3
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_plot'
+              label: Plot
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_fourcol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          d0475033-9825-4c35-8984-58650091ad1e:
+            uuid: d0475033-9825-4c35-8984-58650091ad1e
+            region: first
+            configuration:
+              id: 'field_block:node:movie:field_trailer'
+              label: Trailer
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d90e2891-444d-4602-9507-a75272ff3b8d:
+            uuid: d90e2891-444d-4602-9507-a75272ff3b8d
+            region: second
+            configuration:
+              id: 'field_block:node:movie:field_in_cinemas'
+              label: 'In Cinemas'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          18a1d559-3b74-49f8-99c1-bd206a709f01:
+            uuid: 18a1d559-3b74-49f8-99c1-bd206a709f01
+            region: third
+            configuration:
+              id: 'field_block:node:movie:field_buy_on_dvd'
+              label: 'Buy on DVD'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ab5dd869-e45f-475a-8ec8-69e51694c8ea:
+            uuid: ab5dd869-e45f-475a-8ec8-69e51694c8ea
+            region: fourth
+            configuration:
+              id: 'field_block:node:movie:field_netflix'
+              label: Netflix
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_buy_on_dvd: true
+  field_genre: true
+  field_in_cinemas: true
+  field_movie_banner: true
+  field_netflix: true
+  field_plot: true
+  field_release_date: true
+  field_reviews: true
+  field_trailer: true

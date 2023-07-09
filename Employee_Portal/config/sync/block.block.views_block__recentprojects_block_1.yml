@@ -1,0 +1,25 @@
+uuid: 40f0641c-4c15-4bbe-8331-0e0faa731583
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recentprojects
+  module:
+    - views
+  theme:
+    - bootstrap5
+id: views_block__recentprojects_block_1
+theme: bootstrap5
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:recentprojects-block_1'
+settings:
+  id: 'views_block:recentprojects-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

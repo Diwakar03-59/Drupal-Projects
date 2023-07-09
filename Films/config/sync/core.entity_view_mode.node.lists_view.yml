@@ -1,0 +1,10 @@
+uuid: 7eddc9b6-44bf-4568-9a08-6d6e9fe8978a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.lists_view
+label: 'Lists View'
+targetEntityType: node
+cache: true

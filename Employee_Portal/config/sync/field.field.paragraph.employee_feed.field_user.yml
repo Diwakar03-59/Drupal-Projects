@@ -1,0 +1,34 @@
+uuid: a35b1784-1e60-41c8-b37e-098364840f13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_user
+    - paragraphs.paragraphs_type.employee_feed
+id: paragraph.employee_feed.field_user
+field_name: field_user
+entity_type: paragraph
+bundle: employee_feed
+label: user
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        blogger: blogger
+        content_editor: '0'
+        administrator: '0'
+        hr: '0'
+    include_anonymous: true
+field_type: entity_reference

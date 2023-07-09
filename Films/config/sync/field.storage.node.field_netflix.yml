@@ -1,0 +1,19 @@
+uuid: f013f1b0-02d9-4607-ac2f-b3807431ac15
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_netflix
+field_name: field_netflix
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

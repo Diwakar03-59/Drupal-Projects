@@ -1,0 +1,8 @@
+uuid: 619d3cca-30c1-43e1-83b1-aa86b28a8262
+langcode: en
+status: true
+dependencies: {  }
+id: administrator-menu
+label: 'Administrator Menu'
+description: 'Menu only for the site Administrator.'
+locked: false

@@ -1,0 +1,8 @@
+uuid: 105383a0-2688-44fd-a8eb-abd3c38507f2
+langcode: en
+status: true
+dependencies: {  }
+name: Skills
+vid: skills
+description: 'Skills Possessed by Employees'
+weight: 0

@@ -1,0 +1,10 @@
+uuid: f50518b7-0bc9-4076-8a1d-923eaf17adb4
+langcode: en
+status: true
+dependencies: {  }
+id: employee_feed
+label: 'Employee Feed'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

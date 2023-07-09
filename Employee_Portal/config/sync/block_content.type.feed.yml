@@ -1,0 +1,8 @@
+uuid: fc087dbe-f396-42e9-bc06-8ff78d233dc1
+langcode: en
+status: true
+dependencies: {  }
+id: feed
+label: feed
+revision: 0
+description: ''

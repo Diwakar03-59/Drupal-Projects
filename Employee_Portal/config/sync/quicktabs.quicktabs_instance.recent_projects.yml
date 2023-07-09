@@ -1,0 +1,38 @@
+uuid: 159ec68b-f971-4814-aa0d-05fea9fbdfe0
+langcode: en
+status: true
+dependencies: {  }
+id: recent_projects
+label: 'Recent Projects'
+renderer: quick_tabs
+hide_empty_tabs: false
+default_tab: 9999
+options:
+  quick_tabs:
+    ajax: true
+    class: ''
+    style: tabsbar
+configuration_data:
+  -
+    title: ''
+    weight: 0
+    type: block_content
+    content:
+      block_content:
+        options:
+          bid: 'views_block:recent_projects-block_1'
+          block_title: 'Recent Projects'
+          display_title: true
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''

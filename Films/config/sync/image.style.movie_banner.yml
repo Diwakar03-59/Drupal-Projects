@@ -1,0 +1,14 @@
+uuid: 5bf1ee93-0d2a-40ed-a584-a6857ecf1d3b
+langcode: en
+status: true
+dependencies: {  }
+name: movie_banner
+label: 'Movie Banner'
+effects:
+  aaa9e254-df63-48de-a48c-bb3f6112641f:
+    uuid: aaa9e254-df63-48de-a48c-bb3f6112641f
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 200

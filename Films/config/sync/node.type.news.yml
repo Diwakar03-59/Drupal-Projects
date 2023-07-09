@@ -1,0 +1,17 @@
+uuid: 5fa09682-a44a-4700-9cb2-4b0bb813800b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'To add a news'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

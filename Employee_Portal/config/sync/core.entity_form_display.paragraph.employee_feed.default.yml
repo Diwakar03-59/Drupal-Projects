@@ -1,0 +1,28 @@
+uuid: c6fea3c4-4f38-4b0b-bb1b-75d61757ad87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.employee_feed.field_employee_feed
+    - field.field.paragraph.employee_feed.field_user
+    - paragraphs.paragraphs_type.employee_feed
+id: paragraph.employee_feed.default
+targetEntityType: paragraph
+bundle: employee_feed
+mode: default
+content:
+  field_employee_feed:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_user:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: 683398dd-86f6-4ebf-bd34-ffa6a63621eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employee_feed.field_feed
+    - node.type.employee_feed
+  module:
+    - user
+id: node.employee_feed.teaser
+targetEntityType: node
+bundle: employee_feed
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_feed: true

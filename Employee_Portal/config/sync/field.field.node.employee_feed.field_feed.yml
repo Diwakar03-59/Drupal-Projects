@@ -1,0 +1,31 @@
+uuid: 152141ed-bcec-4c76-aa08-71eb726f4339
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feed
+    - node.type.employee_feed
+    - paragraphs.paragraphs_type.employee_feed
+  module:
+    - entity_reference_revisions
+id: node.employee_feed.field_feed
+field_name: field_feed
+entity_type: node
+bundle: employee_feed
+label: Feed
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      employee_feed: employee_feed
+    negate: 0
+    target_bundles_drag_drop:
+      employee_feed:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

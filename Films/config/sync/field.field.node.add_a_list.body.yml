@@ -1,0 +1,23 @@
+uuid: 3ecd72a4-a081-4f18-97be-b77184393cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.add_a_list
+  module:
+    - text
+id: node.add_a_list.body
+field_name: body
+entity_type: node
+bundle: add_a_list
+label: 'Why these are in the list ?'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

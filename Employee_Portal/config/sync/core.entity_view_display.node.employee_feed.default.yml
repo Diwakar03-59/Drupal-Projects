@@ -1,0 +1,30 @@
+uuid: c088cf09-332e-44b5-a61f-500c2e0b2838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_feed.field_feed
+    - node.type.employee_feed
+  module:
+    - entity_reference_revisions
+    - user
+id: node.employee_feed.default
+targetEntityType: node
+bundle: employee_feed
+mode: default
+content:
+  field_feed:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

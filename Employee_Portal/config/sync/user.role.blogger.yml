@@ -1,0 +1,49 @@
+uuid: bf537c7c-5a68-43b6-a381-0b7a462f9801
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.blog
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - devel_generate
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+id: blogger
+label: Blogger
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer devel_generate'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create blog content'
+  - 'create url aliases'
+  - 'delete any blog content'
+  - 'delete article revisions'
+  - 'delete blog revisions'
+  - 'delete own blog content'
+  - 'delete page revisions'
+  - 'edit own blog content'
+  - 'edit own comments'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert blog revisions'
+  - 'view all revisions'
+  - 'view blog revisions'
+  - 'view own unpublished content'

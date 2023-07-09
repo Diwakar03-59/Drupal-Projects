@@ -1,0 +1,22 @@
+uuid: 6033db26-cc89-4dc9-981c-f952bddc35cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: list_item_url
+label: 'List Item URL'
+type: 'canonical_entities:node'
+pattern: 'top-ten-lists/[node:title]'
+selection_criteria:
+  4f37c8b8-bf42-4241-9b31-648da8dec8a4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 4f37c8b8-bf42-4241-9b31-648da8dec8a4
+    context_mapping:
+      node: node
+    bundles:
+      add_a_list: add_a_list
+selection_logic: and
+weight: -5
+relationships: {  }

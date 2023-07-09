@@ -1,0 +1,10 @@
+uuid: f9d3c713-2761-42c2-b3d9-8bbe3893e05f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.recent_reviews_home
+label: 'Recent reviews home'
+targetEntityType: node
+cache: true

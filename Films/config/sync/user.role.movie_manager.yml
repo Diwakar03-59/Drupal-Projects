@@ -1,0 +1,54 @@
+uuid: 678b0d25-8c86-45c4-9092-1124e5b0ba27
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.add_a_list
+    - node.type.movie
+    - taxonomy.vocabulary.genre
+  module:
+    - comment
+    - contextual
+    - devel_generate
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+id: movie_manager
+label: 'Movie Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer comments'
+  - 'administer devel_generate'
+  - 'administer url aliases'
+  - 'create add_a_list content'
+  - 'create movie content'
+  - 'create terms in genre'
+  - 'delete add_a_list revisions'
+  - 'delete any add_a_list content'
+  - 'delete any movie content'
+  - 'delete movie revisions'
+  - 'delete own add_a_list content'
+  - 'delete own movie content'
+  - 'delete terms in genre'
+  - 'edit any add_a_list content'
+  - 'edit any movie content'
+  - 'edit own add_a_list content'
+  - 'edit own comments'
+  - 'edit own movie content'
+  - 'edit terms in genre'
+  - 'revert add_a_list revisions'
+  - 'revert all revisions'
+  - 'revert movie revisions'
+  - 'view add_a_list revisions'
+  - 'view all revisions'
+  - 'view movie revisions'
+  - 'view own unpublished content'

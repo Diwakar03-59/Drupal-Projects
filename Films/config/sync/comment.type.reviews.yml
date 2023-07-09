@@ -1,0 +1,8 @@
+uuid: 767a0ff0-4125-4faf-b010-1f916a23df3e
+langcode: en
+status: true
+dependencies: {  }
+id: reviews
+label: Reviews
+target_entity_type_id: node
+description: 'Add a Review'

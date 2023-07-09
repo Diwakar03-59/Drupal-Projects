@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: f2e49532-1cc2-4e4f-bf18-a110c3b642f1
+name: 'Top Ten Film Reviews'
+mail: diwakar.sah@innoraft.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/81
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''
